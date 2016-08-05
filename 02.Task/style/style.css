@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background-color: #000066;
+	margin-bottom: 0.5em;
+	height: 1.3em;
+}
+
+#main {
+	width: 100%;
+	height: 20em;
+}
+
+#leftContent {
+	background-color: #800080;
+	margin-right: 2%;
+	float: left;
+	height: 100%;
+	width: 24%;
+}
+
+#rightContent {
+	background-color: #008000;
+	display: inline-block;
+	height: 100%;
+	width: 74%;
+}
+
+#footer{
+	background-color: #0000ff;
+	margin-top: 0.5em;
+	height: 1.3em;
+}

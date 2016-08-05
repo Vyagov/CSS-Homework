@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#first {
+	background-image: url("../images/roulette.jpg");
+	width: 450px;
+	height: 470px;
+	position: absolute;
+    border-radius: 2em;
+}
+
+#second {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    left: 215px;
+    top: 215px;
+    -webkit-animation: rotating 5s linear 1s 3; /* Chrome, Safari, Opera */
+    animation: rotating 5s linear 1s 3;
+    transform: translateX(-200px) translateY(-200px);
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotating {
+    from { -webkit-transform: rotate(0deg) translateX(145px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(145px) rotate(-360deg); }
+}
+
+/* Standard syntax */
+@keyframes rotating {
+    from { transform: rotate(0deg) translateY(-145px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-145px) rotate(-360deg); }
+}
